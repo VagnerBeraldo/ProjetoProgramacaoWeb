@@ -1,0 +1,1628 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+html {
+    scroll-behavior: smooth;
+}
+:root {
+    --verdePadrao: #00A651;
+    --azulContraste: #5F9EA0;
+    --laranjaLogo: #F5AB16;
+    --pretoLogo: #000000;
+    --azure: #F0FFFF;
+    --preto: #3F3F46;
+    --branco: #FFFFFF;
+}
+
+body {
+    background-color: rgba(0, 134, 73, 0.2);
+    width: 1000px;
+    margin: 0 auto;
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    color: var(--azulContraste);
+    font-size: 1.5rem;
+}
+
+.menuForm{
+    margin-left: 43%;
+    position: relative;
+    font-size: 1rem;
+    top: 14px;
+    height: 10px;
+    width: 20%;
+}
+
+#idBtnVoltarIndex{
+    display: flex;
+    justify-content: center;
+    color: var(--laranjaLogo);
+    text-decoration: none;
+    font-weight: 400;
+    border: none;
+    background-color: rgba(0, 134, 73, 0.2);
+    background-color: var(--pretoLogo);
+    border-radius: 20px;
+    padding: 5px 12px;
+    height: 22px;
+    width: 120px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+#idBtnVoltarIndex:hover{
+    color: var(--pretoLogo);
+    transition: 0.3s;
+    background-color: var(--laranjaLogo);    
+}
+
+.menuForm{
+    display: none;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    font-size: 1rem;
+    height: 60px;
+    width: 100%;
+}
+
+.menu a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--laranjaLogo);
+    text-decoration: none;
+    font-weight: 400;
+    background-color: rgba(0, 134, 73, 0.2);
+    background-color: var(--pretoLogo);
+    border-radius: 20px;
+    padding: 5px 12px;
+    width: 120px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+.menu a:hover {
+    color: var(--pretoLogo);
+    transition: 0.3s;
+    background-color: var(--laranjaLogo);
+    
+}
+
+.loginCadastro {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 60px;
+    margin-top: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+
+.loginCadastro .loginCadastro_p {
+    display: flex;
+    flex-direction: column;
+    width: 80%;   
+    margin-top: 20px;
+    color: var(--preto);
+    font-weight: 700;
+}
+
+.btnLoginCad{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+
+button.login,
+button.cadastrese {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    background-color: var(--pretoLogo);
+    color: var(--laranjaLogo);
+    padding: 3px 50px;
+    font-size: 0.8rem;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+button.login:hover,
+button.cadastrese:hover {
+    background-color: var(--laranjaLogo);
+    transition: 0.3s;
+    color: var(--pretoLogo);
+}
+
+.cadastro {
+    display: none;
+}
+
+#idFormCadastro {
+    padding: 10px 0;
+    width: 100%; 
+    min-width: 300px; 
+    height: 1350px; 
+    margin: 0 auto;
+    border: none;
+    border-radius: 10px;
+}
+
+
+.apresentacao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    gap: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: none;
+    height: 350px;
+}
+
+.tituloSection {
+    margin: 30px;
+    color: var(--preto);
+    font-size: 1.1rem;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-style: wavy;
+}
+
+.apresentacaoDescricao {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    margin-left: 5px;
+    border-radius: 8px;
+    width: 300px;
+    height: 265px;
+    width: 100%;
+    background-color: var(--azure);
+
+}
+
+.apresentacaoDescricao p {
+    margin: 10px 10px;
+    line-height: 30px;
+    font-size: 1rem;
+    text-indent: 20px;
+}
+
+#whatsDuvida {
+    position: relative;
+    width: 30px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.duvida {
+    display: flex;
+    justify-content: start;
+    margin: 10px;
+}
+
+.duvida a{
+    text-decoration: none;
+}
+
+button.faleConosco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 20px;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 0.9rem;
+    width: 160px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--pretoLogo);
+    color: var(--laranjaLogo);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+button.faleConosco:hover {
+    background-color: var(--laranjaLogo);
+    transition: 0.3s;
+    color: var(--pretoLogo);
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10px;
+    width: 30%;
+
+}
+
+.logo h3 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    color: var(--pretoLogo);
+}
+
+.logo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    background: linear-gradient(to bottom, rgba(0, 134, 73, 0.1), rgba(0, 134, 73, 0.3), var(--azure));
+}
+
+
+.beneficio {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    border-radius: 8px;
+    top: -30px;
+    height: 200px;
+    width: 800px;
+    gap: 20px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.beneficio1,
+.beneficio2,
+.beneficio3 {
+    display: flex;
+    width: 33%;
+    padding: 10px;
+    color: var(--branco);
+    font-size: 1rem;
+    margin: 0 10px;
+    text-align: justify;
+    border: 1px dashed var(--branco);
+}
+
+
+
+.apresentacaoBeneficio {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 450px;
+    background-color: var(--azure);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    gap: 10px;
+}
+
+.imgPetMissao {
+    display: flex;
+    justify-content: center;
+    width: 35%;
+    height: 210px;
+}
+
+.imgPetMissao img {
+    border-radius: 8px;
+    margin-left: 8px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+.missaoVisaoValores {
+    display: flex;
+    width: 60%;
+    height: 190px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 0.9rem;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.missaoVisaoValores span {
+    font-weight: 700;
+    
+}
+
+.sobre {
+    height: 1330px;
+    background: linear-gradient(to bottom, rgba(0, 134, 73, 0.1), rgba(0, 134, 73, 0.2), var(--azure));
+    border-radius: 8px;
+    
+}
+
+.autor1,
+.autor2,
+.autor3,
+.autor4 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 40px;
+    padding-top: 50px;
+
+}
+
+.imgAutor1 img,
+.imgAutor2 img,
+.imgAutor3 img,
+.imgAutor4 img {
+    width: 200px;
+    height: 200px;
+    border-radius: 130px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    background: linear-gradient(to bottom, rgba(0, 134, 73, 0.1), rgba(0, 134, 73, 0.3), var(--azure));
+}
+
+.nomeAutor1,
+.nomeAutor2,
+.nomeAutor3,
+.nomeAutor4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    width: 60%;
+    height: 180px;
+    background: linear-gradient(to bottom, rgba(0, 134, 73, 0.3), var(--azure));
+}
+
+.simulacao{
+    margin-top: 20px;
+    padding: 20px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background: linear-gradient(to bottom, rgba(0, 134, 73, 0.1) 10%, var(--azulContraste) 10%);
+}
+
+.simulacaoOferta{
+    font-size: 1.0rem;
+}
+
+.tituloOferta{
+    margin-top: 10px;
+    margin-left: 7%;
+    font-size: 1.5rem;
+}
+
+.formOferta{
+    margin-left: 7%;
+    font-size: 2rem;
+}
+#idOfertaSelecionada{
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+}
+#valorSemDesconto{
+    text-decoration:line-through;
+    font-size: 1.4rem;
+}
+#somaValor{
+    font-size: 1.1rem;
+}
+
+.ofertaColaborador{
+    margin-top: 10px;
+    margin-left: 7%;
+    line-height: 35px;
+    font-size: 1.1rem;
+}
+
+.ofertaColaborador p a:hover{
+    color: #FFFFFF;
+}
+
+.galeria {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+    height: 610px;
+    padding-left: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background: linear-gradient(to bottom, rgba(0, 134, 73, 0.1) 10%, var(--azulContraste) 10%);
+}
+
+
+.petMaisProcurado {
+    display: flex;
+    flex-direction: column;
+    height: 580px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background: linear-gradient(to top, rgba(0, 134, 73, 0.1) 15%, var(--azulContraste) 10%);
+
+}
+
+.galeriaImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+.img1, .img2, .img3, .img4, .img5, .img6 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 10px;
+    top: -20px;
+    height: 230px;
+    width: 260px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+}
+
+.img1 img,
+.img2 img,
+.img3 img,
+.img4 img,
+.img5 img,
+.img6 img {
+    height: 200px;
+    border-radius: 8px;
+}
+
+.img4,
+.img5,
+.img6 {
+    margin-top: 40px;
+}
+
+.img1 p,
+.img2 p,
+.img3 p,
+.img4 p,
+.img5 p,
+.img6 p {
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-align: center;
+    padding-top: 15px;
+    color: var(--preto);
+}
+
+.img1 p,
+.img5 p {
+    padding-top: 5px;
+}
+
+.img2 p,
+.img3 p,
+.img6 p {
+    padding-top: 5px;
+}
+
+/*coelhos*/
+.img4 p {
+    padding-top: 18px;
+}
+
+.popularidadePet {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 30px;
+    font-size: 1.1rem;
+    color: var(--preto);
+    line-height: 30px;
+    margin: 0 auto;
+}
+
+.petMaisProcurado #pesquisa {
+    margin: 20px 40px;
+    line-height: 30px;
+    text-align: justify;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--preto);
+
+}
+
+.petMais,
+.petMenos,
+.petIntermediaria {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    font-size: 1rem;
+    padding: 10px;
+    width: 250px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+    background-color: var(--azure);
+}
+
+.petIntermediaria {
+    height: 350px;
+}
+
+.petMais {
+    height: 420px;
+}
+
+.petMenos {
+    height: 300px;
+}
+
+
+.depoimento {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+    padding-top: 50px;
+    text-indent: 20px;
+}
+
+div.fotoCliente1 img,
+div.fotoCliente2 img,
+div.fotoCliente3 img {
+    width: 220px;
+    height: 150px;
+    padding: 10px;
+    border-radius: 30px;
+    background: linear-gradient(to bottom, rgba(0, 134, 73, 0.1), rgba(0, 134, 73, 0.3), var(--azure));
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+
+.fotoCliente1,
+.fotoCliente2,
+.fotoCliente3 {
+    display: flex;
+    width: 20%;
+}
+
+.depoimentoCliente1,
+.depoimentoCliente2,
+.depoimentoCliente3 {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--azure);
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+    width: 70%;
+    font-size: 1rem;
+    height: 150px;
+    text-align: justify;
+    padding: 10px;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+
+.depoimentoCliente1 span,
+.depoimentoCliente2 span,
+.depoimentoCliente3 span {
+    font-weight: 700;
+    text-align: end;
+    margin-right: 10px;
+}
+
+.voltar img {
+    display: none;
+    position: fixed;
+    height: 70px;
+    right: 20%;
+    top: 66%;
+    transition: opacity 0.5s ease;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+.voltar-topo.show {
+    display: block;
+    opacity: 1;
+}
+
+/*******************************************************************************/
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    gap: 20px;
+
+}
+
+.direitos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    line-height: 30px;
+
+}
+
+.redeSocial {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 30%;
+    height: 60px;
+    gap: 20px;
+}
+
+
+.rede img {
+    display: flex;
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+}
+
+.cadastro{
+    display: none;
+}
+
+#idTermoCompromisso{
+    width: 840px;
+}
+
+/*************** POUPAP ***************/
+.poupap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    flex-wrap: wrap;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+}
+
+.poupap div.poupap-lgpd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+
+.poupap div.poupap-lgpd p {
+    text-align: justify;
+    width: 70%;
+    color: var(--branco);
+    font-size: 1.1rem;
+}
+
+.poupap_botoes {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.poupap div.aceitar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+}
+
+
+.poupap .aceitar button {
+    border-radius: 20px;
+    border: 1px solid var(--azulContraste);
+    background-color: var(--azulContraste);
+    padding: 5px 20px;
+    color: var(--branco);
+    font-size: 1.2rem;
+    font-weight: 400;
+    box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.5);
+}
+
+.poupap .recusar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+}
+
+.poupap .recusar button {
+    position: relative;
+    right: -550%;
+    border-radius: 20px;
+    border: 1px solid var(--branco);
+    padding: 5px 20px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.2rem;
+    font-weight: 400;
+    box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.5);
+}
+
+
+@media(max-width: 1440px) {
+    .voltar img {
+        right: 13%;
+    }
+    .simulacao{
+        height: 174px;
+    }
+    .tituloOferta{
+        font-size: 1.3rem;
+    }
+
+}
+
+@media(max-width: 1024px) {
+    .voltar img {
+        right: 0%;
+    }
+    
+    .loginCadastro .loginCadastro_p {
+        position: relative;
+        font-size: 1rem;
+        
+        margin-left: 32%;
+        margin-top: 130px;
+    }
+    
+    #nossoIdeal{
+        margin-top: 70px;
+    }
+
+    .menu {
+        display: flex;
+        align-items: end;
+        justify-content: end;
+        gap: 40px;
+    }
+
+    .menu a{
+        margin-right: 30px;
+    }
+
+    .apresentacao {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: end;
+        margin: 0 auto;
+        gap: 20px;
+        width: 96%;
+        height: 270px;
+    }
+
+    .apresentacaoDescricao {
+        margin: 0 auto;
+        width: 96%;
+        margin-bottom: 40px;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: end;
+        align-items: end;
+        width: 50%;
+        gap: 20px;
+    }
+
+    .logo h3 {
+        position: absolute;
+        left: 20px;
+        top: 170px;
+    }
+
+    .logo img {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        width: 120px;
+        height: 120px;        
+    }
+
+
+    .apresentacaoBeneficio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 96%;
+        margin: 0 auto;
+        height: 680px; 
+    }
+     
+    .beneficio{
+        display: flex;
+        justify-content: center;
+        top: -40px;
+        width: 96%;
+    }    
+
+    .imgPetMissao img {
+        
+        width: 100%;
+        height: 100%;
+        margin-bottom: 80px;        
+    }
+
+    .missaoVisaoValores {
+        display: flex;   
+        height: 190px;
+        width: 70vw;
+        margin-right: 10px;
+        font-size: 1rem;
+    }
+
+    .poupap div.poupap-lgpd p {
+        margin-left: 40px;
+    }
+
+    .poupap_botoes {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .poupap .recusar button {
+        right: 1px;
+        margin-top: 20px;
+    }
+
+}
+
+@media(max-width: 769px){
+
+    div.menu {        
+        gap: 20px;
+    }
+    .missaoVisaoValores {
+        width: 80vw;
+    }
+
+    .poupap{
+        width: 100%;
+    }
+
+    .poupap .aceitar {
+        position: relative;
+        right: 30px;
+    }
+
+    .poupap .recusar button {
+        right: 30px;
+    }
+}
+
+@media(max-width: 426px){
+    .menu a {
+        font-size: 1.3rem;
+        width: 180px;
+    }
+
+    .loginCadastro .login, .loginCadastro .cadastrese{
+        font-size: 1.1rem;
+        margin-right: 30px;
+        width: 120px;
+    }
+
+    
+    .loginCadastro .loginCadastro_p {
+        display: flex;
+        width: 70%;
+        font-size: 1.3rem;
+        justify-content: start;
+        margin-left: 20px;
+        margin-top: 130px;
+    }
+
+    button.faleConosco {
+        font-size: 1.3rem;
+        width: 230px;
+        height: 50px;        
+    }
+    
+
+    #nossoIdeal{
+        margin-bottom: 110px;
+    }
+    .apresentacaoDescricao{
+        height: 500px;
+    }
+
+    .apresentacaoDescricao p{
+        font-size: 1.5rem;
+    }
+
+
+
+    .apresentacaoBeneficio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 96%;
+        margin: 0 auto;
+        height: 900px; 
+    }
+     
+    .beneficio{
+        top: -45px;
+        height: 320px;
+    }
+
+    .beneficio p{
+        font-size: 1.5rem;
+    }
+
+.beneficio1{
+    font-size: 1.5rem;
+}
+
+
+    .missaoVisaoValores{
+        width: 95%;
+        height: 270px;
+        line-height: 40px;
+    }
+
+    .missaoVisaoValores p{
+        font-size: 1.6rem;
+    }
+
+    .sobre {
+        height: 2100px;
+    }
+    
+    .autor1, .autor3{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;        
+    }    
+
+    .autor2, .autor4{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;        
+    }
+
+    .nomeAutor1, .nomeAutor2, .nomeAutor3, .nomeAutor4{
+        width: 80%;
+    }
+
+    .autor1 p, .autor2 p, .autor3 p, .autor4 p{
+        font-size: 1.3rem;
+    }
+
+    .autor1 a, .autor2 a, .autor3 a, .autor4 a{
+        font-size: 1.3rem;
+    }
+
+    .simulacao{
+        height: 178px;
+    }
+
+    .simulacaoOferta{
+        font-size: 1.0rem;
+    }
+    
+    .tituloOferta{
+        margin-top: 10px;
+        margin-left: 7%;
+        font-size: 1.5rem;
+    }
+    
+    #idOfertaSelecionada{
+        font-size: 1.4rem;
+    }
+
+    #valorSemDesconto{
+        font-size: 1.5rem;
+    }
+    #somaValor{
+        font-size: 1.5rem;
+    }
+    /*alteração*/
+    .ofertaColaborador{
+        font-size: 1.5rem;
+    }
+    
+    .tituloSection #petAdocao{
+      margin-top: 220px;  
+    }
+
+    .galeria {
+        height: 1100px;
+        margin-top: 30px;
+        flex-wrap: wrap;        
+    }
+    
+    .galeriaImg {
+        height: 1100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+    
+    
+    .img1, .img2, .img3, .img4, .img5, .img6 {
+        height: 300px;
+        width: 350px;
+    }
+    
+    .img1 img,
+    .img2 img,
+    .img3 img,
+    .img4 img,
+    .img5 img,
+    .img6 img {
+        height: 250px;
+    }
+    
+    .img4,
+    .img5,
+    .img6 {
+        margin-top: 0;    
+    }
+    
+    .img1 p,
+    .img2 p,
+    .img3 p,
+    .img4 p,
+    .img5 p,
+    .img6 p {
+        
+        font-size: 1.5rem;
+            }
+    
+    .img2 p,
+    .img3 p,
+    .img6 p {
+        padding-top: 10px;
+    }
+    
+    /*coelhos*/
+    /* .img4 p {
+        padding-top: 18px;
+    }
+     */
+    
+     .petMaisProcurado {
+        height: 940px;    
+    }
+    
+    .petMaisProcurado #pesquisa {
+        font-size: 1.4rem;
+    }
+ 
+.popularidadePet{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    .petMais,
+    .petMenos,
+    .petIntermediaria {
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        font-size: 1.5rem;
+        width: 90%;
+        
+    }
+    
+    .petIntermediaria {
+        height: 170px;
+    }
+    
+    .petMais {
+        height: 250px;
+    }
+    
+    .petMenos {
+        height: 190px;
+    }
+    
+    
+    .depoimento {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    div.fotoCliente1,
+    div.fotoCliente2,
+    div.fotoCliente3{
+        width: 300px;
+        height: 300px;
+    }
+
+    div.fotoCliente1 img,
+    div.fotoCliente2 img,
+    div.fotoCliente3 img {
+        width: 250px;
+        height: 250px;
+    }
+        
+    .depoimentoCliente1,
+    .depoimentoCliente2,
+    .depoimentoCliente3 {
+        display: flex;
+        width: 90%;
+        font-size: 1.4rem;
+        margin-bottom: 40px;
+    }
+ 
+    
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 350px;
+    }
+    
+    .direitos {
+        width: 80%;
+    }
+
+    .direitos p{
+        font-size: 1.4rem;
+    }
+
+    label.declaroQLi{
+        font-size: 1.2rem;
+    }
+    
+
+}
+
+
+@media(max-width: 375px){
+    
+}
+
+@media(max-width: 320px){
+    
+}
+
+/*************** FORM CADASTRO ***************/
+/* 
+.cadastro {
+    width: 850px;
+    margin: 0 auto;
+    background-color: var(--branco);
+    margin-top: 10px;
+    padding-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+.cadastro_cabecalho {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    max-width: 100%;
+    margin: 30px 10px;
+}
+
+.cadastro_cabecalho div {
+    display: flex;
+    align-items: center;
+}
+
+
+.nomeEmpresa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;       
+    width: 100%;
+    color: var(--preto);
+    margin-top: 5px;
+    font-size: 1.3rem;
+    
+}
+
+
+/*   INFORMAÇÕES PESSOAIS */
+/* 
+.infoPessoal,
+.infoContado,
+.endereco,
+.termoComp,
+.opcaoPet {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+}
+
+.infoPessoal div,
+.infoContado div,
+.endereco div,
+.termoComp div,
+.opcaoPet div {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.termoCompromisso{
+    width: 800px;
+}
+
+
+.numFila {
+    flex: 0 0 15%;
+}
+
+#id-numFila {
+    width: 100%;
+}
+
+.nomeCliente {
+    flex: 0 0 30%;
+}
+
+#id-nomeCliente {
+    width: 100%;
+}
+
+.sobrenomeCliente {
+    flex: 0 0 51%;
+}
+
+#id-nomeCliente {
+    width: 100%;
+}
+
+.nomeSocial {
+    flex: 0 0 28%;
+}
+
+#id-nomeSocial {
+    width: 100%;
+}
+
+.cpf {
+    flex: 0 0 20%;
+}
+
+#id-cpf {
+    width: 100%;
+}
+
+.dtNascimento {
+    flex: 0 0 20%;
+}
+
+#id-dtNasc {
+    width: 100%;
+}
+
+.email {
+    flex: 0 0 68%;
+}
+
+#id-email {
+    width: 100%;
+}
+
+.telefoneCelular {
+    flex: 0 0 30%;
+}
+
+#id-telefoneCelular {
+    width: 100%;
+}
+
+.telefoneResid {
+    flex: 0 0 30%;
+}
+
+#id-telefoneResid {
+    width: 100%;
+}
+
+.cep {
+    flex: 0 0 20%;
+}
+
+#id-cep {
+    width: 100%;
+}
+
+.rua {
+    flex: 0 0 78%;
+}
+
+#id-rua {
+    width: 100%;
+}
+
+.numero {
+    flex: 0 0 10%;
+}
+
+#id-numero {
+    width: 100%;
+}
+
+.complemento {
+    flex: 0 0 50%;
+}
+
+#id-complemento {
+    width: 100%;
+}
+
+.bairro {
+    flex: 0 0 36%;
+}
+
+#id-bairro {
+    width: 100%;
+}
+
+.cidade{
+    flex: 0 0 36%;
+}
+
+#id-cidade{
+    width: 100%;
+}
+
+.estado{
+    flex: 0 0 15%;
+}
+
+#id-estado{
+    width: 100%;
+}
+
+.nomePet{
+    flex: 0 0 83%;
+}
+
+
+#id-nomePet{
+    width: 100%;
+}
+
+.registroPet{
+    flex: 0 0 15%;
+}
+
+#id-registroPet{
+    width: 100%;
+}
+
+
+
+.termo {
+    margin-left: 20px;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.botoes div {
+    display: flex;
+    align-items: center;
+
+}
+
+.botoes button {
+    display: flex;
+    background-color: var(--branco);
+    border: 1px solid var(--preto);
+    font-size: 1.1rem;
+    color: var(--preta);
+    border-radius: 20px;
+    padding: 5px 30px;
+    margin-top: 40px;
+    transition: background-color 0.8s ease;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+}
+
+.botoes #consultar {
+    display: none;
+} 
+
+.botoes button:hover {
+    background-color: var(--azulContraste);
+    color: var(--branco);
+    cursor: pointer;
+}
+
+
+label {
+    margin-bottom: 5px;
+    color: var(--preto);
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+input,
+select {
+    font-size: 1.1rem;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+input {
+    border-style: none;
+    border-bottom: 2px solid var(--preto);
+    outline: none;
+}
+
+input:hover {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+
+a:hover{
+    color: var(--azulContraste);
+} 
+ */
+
+/*     
+@media(max-width: 850px) {
+    .cadastro {
+        max-width: 850px;        
+        padding: 0 10px;
+        margin: 0 10px;
+    }
+    
+    .nomeCliente {
+        flex: 0 0 30%;
+    }
+    
+    .sobrenomeCliente {
+        flex: 0 0 55%;
+    }
+
+    .nomeSocial {
+        flex: 0 0 33%;
+    }
+    
+    .cpf {
+        flex: 0 0 25%;
+    }
+    
+    
+    .dtNascimento {
+        flex: 0 0 25%;
+    }
+
+    .email {
+        flex: 0 0 87%;
+    }
+    
+    .telefoneCelular {
+        flex: 0 0 35%;
+    }
+    
+    .telefoneResid {
+        flex: 0 0 35%;
+    }
+    
+    .numero {
+        flex: 0 0 15%;
+    }
+    
+    .complemento {
+        flex: 0 0 70%;
+    }
+    
+    .cep {
+        flex: 0 0 30%;
+    }
+    
+    .rua {
+        flex: 0 0 87%;
+    }
+    
+    .termo {
+        margin-left: 15px;
+    }
+    
+
+    .botoes #enviar, #alterar, #excluir {
+        margin-bottom: 40px;
+    }
+    
+
+} */
+
+/* 
+@media (max-width: 426px) {
+    .infoPessoal,
+    .infoContado,
+    .endereco,
+    .termoComp,
+    .opcaoPet {
+        display: flex; 
+        flex-direction: column; 
+        gap: 10px; /* Espaçamento entre os elementos 
+    }
+
+    /* Ajusta a largura dos elementos para ocupar 100% 
+    .numFila,
+    .nomeCliente,
+    .sobrenomeCliente,
+    .nomeSocial,
+    .cpf,
+    .dtNascimento,
+    .email,
+    .telefoneCelular,
+    .telefoneResid,
+    .cep,
+    .rua,
+    .numero,
+    .complemento,
+    .bairro,
+    .cidade,
+    .estado,
+    .nomePet,
+    .registroPet {
+        flex: 0 0 100%; /* Define a largura dos elementos para 100% 
+    }
+
+    .botoes {
+        display: flex;
+        flex-direction: row; /* Define a direção dos botões como coluna 
+        align-items: center; /* Centraliza os botões horizontalmente 
+        gap: 10px; /* Espaçamento entre os botões 
+    } 
+}
+
+*/

@@ -1,0 +1,35 @@
+/* 
+    Created on : 30 de set. de 2024, 10:34:25
+    Author     : vagner
+*/
+*{
+    margin: 0 auto;
+    font-family: arial;
+}
+
+table{
+    width: 80%;
+    border: 1px solid black;
+}
+
+th{
+    background-color: #003B8F;
+    color: white;
+    text-align: center;
+}
+
+td{
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+
+caption{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-decoration: underline;
+    
+}

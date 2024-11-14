@@ -1,0 +1,16 @@
+body{
+    margin: 0 auto;
+    width: 760px;
+}
+
+body h1, body h2{
+    display: flex;
+    justify-content: center;
+}
+
+body p{
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 30px;
+    font-size: 1.1rem;
+}
