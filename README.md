@@ -23,7 +23,7 @@ Aluno do 2º semestre do curso de Desenvolvimento de Sistemas do SENAC - Santo A
 ## Desenvolvedores
 - [Vagner Beraldo - Dev Front-End e Back-End](https://github.com/VagnerBeraldo)
 
-### Print da Tela Inicial
+### Tela Inicial
 ![Print da Tela Inicial](https://github.com/VagnerBeraldo/ProjetoPWII/blob/main/web/img/site.PNG)
 
 
