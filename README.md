@@ -10,17 +10,17 @@ Aluno do 2º semestre do curso de Desenvolvimento de Sistemas do SENAC - Santo A
 
 ## Tecnologias Utilizadas
 
-### Front-end
+### ✔️ Front-end
 - HTML
 - CSS
 - JavaScript
 
-### Back-end
+### ✔️ Back-end
 - Java JSP
 - MySQL
 - Tom-Cat
 
-## Desenvolvedores
+## 💻 Desenvolvedor
 - [Vagner Beraldo - Dev Front-End e Back-End](https://github.com/VagnerBeraldo)
 
 ### Tela Inicial
