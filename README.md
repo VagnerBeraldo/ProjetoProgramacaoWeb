@@ -18,7 +18,7 @@ Aluno do 2º semestre do curso de Desenvolvimento de Sistemas do SENAC - Santo A
 ### Back-end
 - Java JSP
 - MySQL
-- Tom Cat
+- Tom-Cat
 
 ## Desenvolvedores
 - [Vagner Beraldo - Dev Front-End e Back-End](https://github.com/VagnerBeraldo)
