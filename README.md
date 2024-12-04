@@ -1,23 +1,29 @@
-```
+# Laços de Patas
 
-# Projeto de Programação WEB 2º semesestre TDAS - SENAC Santo Amaro.
+## Descrição
+Projeto desenvolvido como requisito final da matéria de Programação Web. Trata-se de uma ONG fictícia que promove a adoção de PETs.
 
-![image](https://user-images.githubusercontent.com/77756047/211304452-220fedf0-f91b-490f-8a65-a60ce860bc5c.png)
+**Autor:**
+- **Vagner Beraldo (Front End e Back End)**
 
-## Ferramentas utilizadas:
+Aluno do 2º semestre do curso de Desenvolvimento de Sistemas do SENAC - Santo Amaro.
 
-* HTML
+## Tecnologias Utilizadas
 
-* CSS
+### Front-end
+- HTML
+- CSS
+- JavaScript
 
-* JAVASCRIPT
+### Back-end
+- Java JSP
+- MySQL
+- Tom Cat
 
-* Flex-box
+## Desenvolvedores
+- [Vagner Beraldo - Dev Front-End e Back-End](https://github.com/VagnerBeraldo)
 
-## Feito por:
+### Print da Tela Inicial
+![Print da Tela Inicial](https://github.com/VagnerBeraldo/Trabalho_PI_2sem/blob/main/web/img/Site2MA.png)
 
-### Vagner Vieira Beraldo
 
-### Linkedin: https://www.linkedin.com/feed/
-
-```
