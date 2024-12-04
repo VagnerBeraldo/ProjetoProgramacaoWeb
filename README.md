@@ -25,5 +25,3 @@ Aluno do 2º semestre do curso de Desenvolvimento de Sistemas do SENAC - Santo A
 
 ### Tela Inicial
 ![Print da Tela Inicial](https://github.com/VagnerBeraldo/ProjetoPWII/blob/main/web/img/site.PNG)
-
-
