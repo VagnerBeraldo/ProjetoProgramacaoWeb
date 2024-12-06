@@ -14,7 +14,9 @@ enabled=false
 <html lang="pt-br">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset="ISO-8859-1">
-        <link rel="stylesheet" href="../css/styleFormulario.css">
+        <link rel="stylesheet" href="../css/cliente.css">
+        <link rel="stylesheet" href="../css/formAlteracao.css">
+        
         <title></title>
     </head>
     <body>
@@ -38,6 +40,15 @@ enabled=false
             if (rs.next()) {
         %>    
         <br>
+        
+        <section class="cadastro">
+
+            <div class="cadastro_cabecalho">
+                <div class="nomeEmpresa">
+                    <br>
+                    <h3><b>Cadastro de Tutor - Alteração</b></h3>
+                </div>
+            </div>
         <div class="form">
             <form actionclass="form" method="post" action="alterarUsuario.jsp">
                 <fieldset class="infoPessoal">
@@ -175,6 +186,7 @@ enabled=false
                 </div>
             </form>
         </div>
+        </section>
     <%
             
             } 

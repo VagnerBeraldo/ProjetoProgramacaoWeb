@@ -73,9 +73,9 @@
 
                 stm.executeUpdate(); //executa o cmd
 
-                out.print("<p style='color:white; font-size:30; font-family: arial'>Jogador alterado com sucesso!</p>");
+                out.print("<script>alert('Alteração realizada com sucesso!');</script>");
             } catch (SQLException erro) {
-                    out.print("<p style='color:red; font-size:30;'>Erro: Entre em contato com o administrador</p>" + erro.getMessage());
+                out.print("<script>alert('Erro: Entre em contato com o administrador.');</script>");
             } 
         %>
     </body>

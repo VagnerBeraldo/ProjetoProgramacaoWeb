@@ -13,8 +13,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Relação de pets</title>
-        <link rel="stylesheet" href="../css/styleLista.css" type="text/css">
-           
+        <link rel="stylesheet" href="../css/cliente.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     </head>
     <body>
         <%
@@ -36,10 +36,10 @@
             stm.setString(1, senhaUsuario);
             rs = stm.executeQuery();
             
-            out.print("<table>");
+            out.print("<table id='relatorio'>");
             
             out.print("<caption>");
-            out.print("Relação resumo de Pets para adoção");
+            out.print("Relatório - pets para adoção");
             out.print("</caption>");
             
             out.print("<tr><th> Posição </th><th> Tutor </th><th> ID Pet </th><th> Nome do Pet </th><th> Status </th><th> Exclusão</th><th> Alterar</th></tr>");
@@ -51,8 +51,14 @@
             "</td><td>" + rs.getString("statusPet") +
             "</td>");    /*href=excluir_remedio.jsp?<name do HTML>=" */               /*nome da coluna no banco de dados*/
             out.print("<td><a href='excluirUsuario.jsp?codigo=" + rs.getString("posicao") + 
-                  "' onclick='return confirm(\"Confirmar a exclusão?\");'>Excluir</a></td>");
-            out.print("<td><a href='alterarCarregarForm.jsp?codigo=" + rs.getString("posicao") + "'>Alterar</a></td></tr>");
+          "' onclick='return confirm(\"Confirmar a exclusão?\");'><i class='fa fa-trash' aria-hidden='true'></i></a></td>");
+
+            /*out.print("<td><a href='excluirUsuario.jsp?codigo=" + rs.getString("posicao") + 
+                  "' onclick='return confirm(\"Confirmar a exclusão?\");'>Excluir</a></td>");*/
+            
+            out.print("<td><a href='alterarCarregarForm.jsp?codigo=" + rs.getString("posicao") + 
+          "'><i class='fa fa-edit' aria-hidden='true'></i></a></td></tr>");
+
             }
             out.print("</table>");
         %>

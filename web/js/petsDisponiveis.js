@@ -3,7 +3,7 @@
         "9": "DOM (Cachorro)",
         "11": "CARAMELO (Hamster)",
         "14": "DORY (Gato)",
-        "18": "CASCÃO E CASQUINHA (Jabuti)",
+        "18": "CASCO E CASQUINHA (Jabuti)",
         "22": "PLAGG E BIGODE (Coelho)"
     };
 

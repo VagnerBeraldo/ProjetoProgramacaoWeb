@@ -75,14 +75,6 @@
     margin-top: 100px;
 }
 
-.iframeAdm{
-    width: 90%;
-    height: 95vh;
-    border-radius: 20px;
-    background-color: var(--azure);
-    margin-bottom: 20px;
-    /*box-shadow: 5px 5px 15px rgba(0,0,0,0.8);*/
-}
 
 footer{
     height: auto;

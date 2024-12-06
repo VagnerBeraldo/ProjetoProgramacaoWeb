@@ -78,7 +78,7 @@ label {
 input {
   border-bottom: 2px solid var(--preto);
   padding: 10px;
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin-bottom: 20px;
   background-color: transparent;
 }
@@ -97,7 +97,6 @@ input[type="submit"] {
   display: flex;
   justify-content: center;
   text-align: center;
-  text-transform: uppercase;
   width: 65%;
   height: 40px;
   margin: 0 auto;
@@ -107,7 +106,6 @@ input[type="submit"] {
   color: var(--branco);
   background-color: black; 
   border: none;
-  font-weight: bold;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
 }
 
@@ -131,14 +129,13 @@ input.formLogin{
   margin-bottom: 10px;
 }
 
-
 @media(max-width: 480px){
   html, main{
     width: 100vw;
   }
 
   #login-container{
-    width: 95%;
+    width: 85%;
 }         
   
 

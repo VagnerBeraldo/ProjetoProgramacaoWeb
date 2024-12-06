@@ -45,7 +45,7 @@ header h1 {
     color: var(--laranjaLogo);
     text-decoration: none;
     font-weight: 400;
-    border: 2px solid var(--pretoLogo);
+    border: none;
     background-color: rgba(0, 134, 73, 0.2);
     background-color: var(--pretoLogo);
     border-radius: 20px;
@@ -87,7 +87,6 @@ header h1 {
     border-radius: 20px;
     padding: 5px 12px;
     width: 120px;
-    border: 2px solid var(--pretoLogo);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
 }
 
@@ -105,13 +104,16 @@ header h1 {
     height: 60px;
     margin-top: 20px;
     border-top: 1px solid rgba(0, 0, 0, 0.3);
+    
 }
 
 
 .loginCadastro .loginCadastro_p {
     display: flex;
     flex-direction: column;
-    width: 80%;   
+    justify-content: center;
+    width: 100%;
+    font-size: 1.1rem;
     margin-top: 20px;
     color: var(--preto);
     font-weight: 700;
@@ -134,10 +136,10 @@ button.cadastrese {
     background-color: var(--pretoLogo);
     color: var(--laranjaLogo);
     padding: 3px 50px;
-    font-size: 0.8rem;
+    font-size: 0.875rem;
     border-radius: 20px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
-    border: 2px solid var(--pretoLogo);
+    border: none;
     cursor: pointer;
     margin-top: 10px;
 }
@@ -234,7 +236,7 @@ button.faleConosco {
     width: 160px;
     height: 40px;
     border-radius: 20px;
-    border: 2px solid var(--pretoLogo);
+    border: none;
     background-color: var(--pretoLogo);
     color: var(--laranjaLogo);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
@@ -401,23 +403,44 @@ button.faleConosco:hover {
     background: linear-gradient(to bottom, rgba(0, 134, 73, 0.1) 10%, var(--azulContraste) 10%);
 }
 
-.tituloOferta{
-    margin-top: 20px;
-    margin-left: 7%;
-    font-size: 1.5rem;
-}
-.formOferta{
-    margin-left: 7%;
-    font-size: 2rem;
+.simulacaoOferta{
+    font-size: 1.0rem;
 }
 
-.valores{
+.tituloOferta{
     margin-top: 10px;
     margin-left: 7%;
     font-size: 1.3rem;
 }
 
-.valores p a:hover{
+.formOferta{
+    margin-left: 7%;
+    font-size: 1.5rem;
+}
+#idOfertaSelecionada{
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+}
+#valorSemDesconto{
+    text-decoration:line-through;
+    font-size: 1.1rem;
+}
+#somaValor{
+    font-size: 1.1rem;
+}
+
+.ofertaColaborador{
+    margin-top: 10px;
+    margin-left: 7%;
+    line-height: 35px;
+    font-size: 1.1rem;
+}
+
+.ofertaColaborador p a:hover{
     color: #FFFFFF;
 }
 
@@ -511,7 +534,7 @@ button.faleConosco:hover {
 
 /*coelhos*/
 .img4 p {
-    padding-top: 18px;
+    padding-top: 5px;
 }
 
 .popularidadePet {
@@ -653,7 +676,6 @@ footer {
     justify-content: center;
     width: 70%;
     line-height: 30px;
-
 }
 
 .redeSocial {
@@ -681,15 +703,100 @@ footer {
     width: 840px;
 }
 
+/*************** POUPAP ***************/
+.poupap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    flex-wrap: wrap;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+}
+
+.poupap div.poupap-lgpd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+
+.poupap div.poupap-lgpd p {
+    text-align: justify;
+    width: 70%;
+    color: var(--branco);
+    font-size: 1.1rem;
+}
+.poupap .poupap-lgpd p a{
+    color: var(--azulContraste);
+}
+.poupap_botoes {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.poupap div.aceitar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+}
+
+
+.poupap .aceitar button {
+    border-radius: 20px;
+    border: 1px solid var(--azulContraste);
+    background-color: var(--azulContraste);
+    padding: 5px 20px;
+    color: var(--branco);
+    font-size: 1.1rem;
+    font-weight: 400;
+    box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.5);
+}
+
+.poupap .recusar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+}
+
+.poupap .recusar button {
+    position: relative;
+    right: -550%;
+    border-radius: 20px;
+    border: 1px solid var(--branco);
+    padding: 5px 20px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    font-weight: 400;
+    box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.5);
+}
+
 
 @media(max-width: 1440px) {
     .voltar img {
         right: 13%;
     }
+    .simulacao{
+        height: 174px;
+    }
+    .tituloOferta{
+        font-size: 1.3rem;
+    }
 
 }
 
 @media(max-width: 1024px) {
+    .logo img{
+        padding: 7px;
+    }
     .voltar img {
         right: 0%;
     }
@@ -697,8 +804,7 @@ footer {
     .loginCadastro .loginCadastro_p {
         position: relative;
         font-size: 1rem;
-        
-        margin-left: 32%;
+        margin-left: 1%;
         margin-top: 130px;
     }
     
@@ -789,15 +895,45 @@ footer {
         font-size: 1rem;
     }
 
+    .poupap div.poupap-lgpd p {
+        margin-left: 40px;
+    }
+
+    .poupap_botoes {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .poupap .recusar button {
+        right: 1px;
+        margin-top: 20px;
+    }
+
 }
 
 @media(max-width: 769px){
-
+    .logo img{
+        padding: 7px;
+    }
     div.menu {        
         gap: 20px;
     }
     .missaoVisaoValores {
         width: 80vw;
+    }
+
+    .poupap{
+        width: 100%;
+    }
+
+    .poupap .aceitar {
+        position: relative;
+        right: 30px;
+    }
+
+    .poupap .recusar button {
+        right: 30px;
     }
 }
 
@@ -862,10 +998,9 @@ footer {
         font-size: 1.5rem;
     }
 
-.beneficio1{
-    font-size: 1.5rem;
-}
-
+    .beneficio1{
+        font-size: 1.5rem;
+    }
 
     .missaoVisaoValores{
         width: 95%;
@@ -905,9 +1040,43 @@ footer {
         font-size: 1.3rem;
     }
 
+    .simulacao{
+        height: 178px;
+    }
+
+    .simulacaoOferta{
+        font-size: 1.0rem;
+    }
+    
+    .tituloOferta{
+        margin-top: 10px;
+        margin-left: 7%;
+        font-size: 1.3rem;
+    }
+    
+    #idOfertaSelecionada{
+        font-size: 1.1rem;
+    }
+
+    #valorSemDesconto{
+        font-size: 1.3rem;
+    }
+    #somaValor{
+        font-size: 1.3rem;
+    }
+    
+    .ofertaColaborador{
+        font-size: 1.3rem;
+    }
+    
+    .tituloSection #petAdocao{
+      margin-top: 220px;  
+    }
+
     .galeria {
         height: 1100px;
-        flex-wrap: wrap;
+        margin-top: 30px;
+        flex-wrap: wrap;        
     }
     
     .galeriaImg {
@@ -955,13 +1124,7 @@ footer {
         padding-top: 10px;
     }
     
-    /*coelhos*/
-    /* .img4 p {
-        padding-top: 18px;
-    }
-     */
-    
-     .petMaisProcurado {
+    .petMaisProcurado {
         height: 940px;    
     }
     
@@ -969,11 +1132,11 @@ footer {
         font-size: 1.4rem;
     }
  
-.popularidadePet{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+    .popularidadePet{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
     .petMais,
     .petMenos,
@@ -1051,16 +1214,53 @@ footer {
         font-size: 1.2rem;
     }
     
+    .poupap div.poupap-lgpd p {
+    
+        width: 80%;
+    
+        font-size: 1.3rem;
+    }
+    .poupap .poupap-lgpd p a{
+        font-size: 1.3rem;
+    }
+    
+    .poupap .recusar button, .poupap .aceitar button{
+        font-size: 1.4rem
+    }
+    .poupap .recusar button{
+        margin-top: 40px;
+    }
 
 }
 
 
 @media(max-width: 375px){
+    .poupap{
+        height: 350px;
+    }
     
+    .poupap div.poupap-lgpd p {
+        width: 80%;
+        font-size: 1.3rem;
+    }
+    .poupap .poupap-lgpd p a{
+        font-size: 1.3rem;
+    }
 }
 
 @media(max-width: 320px){
+    .poupap{
+        height: 350px;
+    }
     
+    .poupap div.poupap-lgpd p {
+        width: 80%;
+        font-size: 1.4rem;
+    }
+    
+    .poupap .poupap-lgpd p a{
+        font-size: 1.4rem;
+    }
 }
 
 /*************** FORM CADASTRO ***************/

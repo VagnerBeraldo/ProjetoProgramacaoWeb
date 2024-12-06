@@ -43,6 +43,30 @@
     flex: 1;
 }
 
+/* #inicio, #alterar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--laranjaLogo);
+    text-decoration: none;
+    font-weight: 400;
+    border: none;
+    background-color: rgba(0, 134, 73, 0.2);
+    background-color: var(--pretoLogo);
+    border-radius: 20px;
+    padding: 5px 12px;
+    right: 10px;
+    height: 25px;
+    width: 100px;
+    
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+#menu li a{
+    left: 10px;
+    color: red;
+} */
+
 .section div{
     display: flex;
     justify-content: center;
@@ -51,14 +75,6 @@
     margin-top: 100px;
 }
 
-.iframeAdm{
-    width: 90%;
-    height: 95vh;
-    border-radius: 20px;
-    background-color: var(--azure);
-    margin-bottom: 20px;
-    /*box-shadow: 5px 5px 15px rgba(0,0,0,0.8);*/
-}
 
 footer{
     height: auto;

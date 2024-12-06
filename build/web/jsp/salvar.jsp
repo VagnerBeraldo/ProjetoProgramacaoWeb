@@ -12,6 +12,7 @@
 <%@page import="java.sql.ResultSet"%>
 
 <!DOCTYPE html>
+<html lang="pt-br">
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -80,7 +81,7 @@
             if (generatedKeys.next()) {
                 posicaoCliente = generatedKeys.getInt(1);  // Obter o ID gerado para o cliente
             } else {
-                throw new SQLException("Falha ao inserir cliente, ID nÃ£o obtido.");
+                throw new SQLException("Falha ao inserir cliente, ID não obtido.");
             }
 
             // Inserir o pet, relacionando com o cliente
@@ -91,15 +92,20 @@
 
             stm.executeUpdate();
 
+
+            // Redireciona para o index.html após mostrar o alerta
+            String contextPath = request.getContextPath(); // Obtem o contexto da aplicação (ex: /ProjetoPWII)
             out.println("<script type='text/javascript'>");
-            out.println("window.location.href = 'index.html';");
             out.println("alert('Dados cadastrados com sucesso!');");
+            out.println("window.location.href = '" + contextPath + "/index.html';"); // Redireciona para /ProjetoPWII/index.html
             out.println("</script>");
 
+
         } catch (Exception e) {
+            String contextPath = request.getContextPath(); // Obtém o contexto da aplicação
             out.println("<script type='text/javascript'>");
             out.println("alert('Erro ao inserir dados: " + e.getMessage() + "');");
-            out.println("window.location.href = 'index.jsp';");
+            out.println("window.location.href = '" + contextPath + "/index.html';"); // Redireciona para a página inicial
             out.println("</script>");
         } finally {
             if (generatedKeys != null) try { generatedKeys.close(); } catch (Exception ignore) {}

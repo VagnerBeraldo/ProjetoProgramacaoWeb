@@ -6,11 +6,11 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelector(".poupap").style.display = "none";
     }
 
-    function handlePopupInteraction() {
+    function interacaoPopup() {
         localStorage.setItem("popupStatus", "true");
         document.querySelector(".poupap").style.display = "none";
     }
 
-    document.querySelector(".aceitar button").addEventListener("click", handlePopupInteraction);
-    document.querySelector(".recusar button").addEventListener("click", handlePopupInteraction);
+    document.querySelector(".aceitar button").addEventListener("click", interacaoPopup);
+    document.querySelector(".recusar button").addEventListener("click", interacaoPopup);
 });

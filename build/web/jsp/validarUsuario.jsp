@@ -39,9 +39,16 @@
         rs = stm.executeQuery();
 
         if (rs.next()) {
+            String primeiroNome = rs.getString("primeiroNome");
+            String nomeSocial = rs.getString("nomeSocial");
+
+            String nomeExibido = (nomeSocial != null && !nomeSocial.trim().isEmpty()) ? nomeSocial : primeiroNome;
+
             session.setAttribute("senhaUsuario", password);
-            // Redireciona para adm.jsp com o primeiroNome do usuário
-            response.sendRedirect("adm.jsp?primeiroNome=" + rs.getString("primeiroNome"));
+
+            // Redireciona para adm.jsp com o nome correto
+            response.sendRedirect("adm.jsp?primeiroNome=" + nomeExibido);
+
         } else {
             loginInvalido = true;  // Login incorreto
         }
